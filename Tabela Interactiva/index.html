@@ -1,0 +1,46 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tabela interactiva</title> 
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <table>
+            <tbody>
+                <tr class="line-of-remove">
+                    <td class="useless"></td>
+                    <td class="remove" onclick="removeColumns()"></td>
+                    <td class="remove" onclick="removeColumns()"></td>
+                    <td class="remove" onclick="removeColumns()"></td>
+                </tr>
+                <tr>
+                    <td class="remove" onclick="removeLines()"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="remove" onclick="removeLines()"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="remove" onclick="removeLines()"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="add-lines" class="add" onclick="addLines()">+</td>
+                </tr>
+                <tr>
+                    <td class="useless"></td>
+                    <td class="useless"></td>
+                    <td class="useless"></td>
+                    <td id="add-columns" class="add" onclick="addColumns()">+</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
