@@ -1,6 +1,10 @@
+// Pun in "table" ceea ce am in "myTableStorage";
+document.querySelector("table").innerHTML = localStorage.getItem("myTableStorage");
 
 let n  = document.querySelectorAll("tr");
 let removeLine = document.querySelectorAll(".line-of-remove td");
+
+
 
 function doSomething() {
     let n  = document.querySelectorAll("tr");
@@ -97,10 +101,11 @@ function doSomething() {
 
         countChild++;
     }
-    console.log("finished");
 }
 
 doSomething();
+// creez si modific constant "myTableStorage"
+localStorage.setItem("myTableStorage", document.querySelector("table").innerHTML);
 
 let countLines=0, countColumns=0;
 for(let i=1; i<n.length-1; i++){
@@ -129,7 +134,7 @@ function doSomethingWithTable() {
             lastTd += "<tr class="+ trClass +"> <td class=\"remove\" onclick=\"removeLines()\"></td>"; 
             
             for(let j=1; j<=countColumns; j++) {
-                lastTd += "<td></td>";
+                lastTd += "<td><input type=\"text\"></td>";
                 if(j==countColumns){
                     lastTd += "<td id=\"add-lines\" class=\"add\" onclick=\"addLines()\">+</td></tr>";
                 }
@@ -141,7 +146,7 @@ function doSomethingWithTable() {
             document.querySelector("tbody").innerHTML += "<tr class="+ trClass +"> <td class=\"remove\" onclick=\"removeLines()\"></td>"; 
             
             for(let j=1; j<=countColumns; j++) {
-                document.querySelector("." + trClass).innerHTML += "<td></td>";
+                document.querySelector("." + trClass).innerHTML += "<td><input type=\"text\"></td>";
             }
 
             document.querySelector("tbody").innerHTML += "</tr>";
@@ -156,6 +161,9 @@ function doSomethingWithTable() {
     lastTr += "<td id=\"add-columns\" class=\"add\" onclick=\"addColumns()\">+</td></tr>";
     
     document.querySelector("tbody").innerHTML += lastTr;
+
+    // creez si modific constant "myTableStorage"
+    localStorage.setItem("myTableStorage", document.querySelector("table").innerHTML);
 }
 
 
@@ -163,6 +171,7 @@ function addLines() {
     countLines ++;
     doSomethingWithTable()
     doSomething();
+    checkWhereIClicked();   
 }
 
 function addColumns(){
@@ -170,6 +179,7 @@ function addColumns(){
     countColumns ++;
     doSomethingWithTable()
     doSomething();
+    checkWhereIClicked(); 
 }
 
 
@@ -179,6 +189,7 @@ function removeLines() {
         doSomethingWithTable()
     }
     doSomething();
+    checkWhereIClicked();
 }
 
 function removeColumns() {  
@@ -187,4 +198,5 @@ function removeColumns() {
         doSomethingWithTable()
     }
     doSomething();
+    checkWhereIClicked();
 }
