@@ -1,3 +1,2 @@
 # Sorin
-Tabela interactiva;
-Add & remove columns/lines
+Just do it!!
