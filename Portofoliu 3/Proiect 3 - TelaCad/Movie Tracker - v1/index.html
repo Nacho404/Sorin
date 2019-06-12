@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Movie Tracker</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" charset="utf-8"></script>
+
+    </script>
+  </head>
+  <body>
+<!-- Prezentare site  -->
+    <h1>Movie Tracker</h1>
+    <h4>Movie Tracker este un site destinat utilizatorilor ce vor informatii legate de filmele aparute si de cele care vor urma sa apara</h4>
+
+
+    <main>
+<!-- Adaugare filme  -->
+      <div class="add-movie">
+        <h2>Adauga film</h2>
+        <form>
+          <p>Nume: </p>
+          <input class="movie-name" type="text" autocomplete="off" placeholder="Numele filmului...">
+
+          <p>Descriere: </p>
+          <input class="movie-describe" type="text" autocomplete="off" placeholder="Descrierea filmului...">
+
+          <p>Imagine (introduceti url-ul imaginii): </p>
+          <input class="movie-image" type="text" autocomplete="off" placeholder="Url imagine...">
+
+          <p>An: </p>
+          <input class="movie-release" type="number" autocomplete="off" placeholder="An lansare film...">
+
+          <p>Rating(0-10): </p>
+          <input class="movie-rating" type="number" autocomplete="off" placeholder="Rating film...">
+
+          <span class="add-btn">
+            Adauga film
+          </span>
+
+        </form>
+
+      </div>
+
+<!-- Lista filmelor -->
+      <div class="movies">
+        <h2>Filme</h2>
+
+        <div class="sorted-by">
+            <section style="background-color: #04bde7; color: red;">Initial</section>
+            <div class="options-sort">
+              <section>Initial</section>
+              <section>Nume</section>
+              <section>An</section>
+              <section>Rating</section>
+              <section>Data adaugarii</section>
+            </div>
+        </div>
+
+        <ul>
+
+          <li>
+
+            <div class="time">
+              Prescrise
+            </div>
+
+            <div class="name-year-rating">
+              <h3>John Wick: Chapter 3 - Parabellum (<span class="year">2019</span>)</h3>
+              <p>Rating: 9</p>
+            </div>
+
+            <div class="image-describe">
+              <img class="image" src="https://cdn3.movieweb.com/i/movie/aLN4K1XoKQA0LfzHhufVMVp3My00zQ/384:50/John-Wick-3-Parabellum.jpg" alt="Nu exista">
+              <section class="describe">
+                Super-assassin John Wick is on the run after killing a member of the international assassin's guild, and with a $14 million price tag on his head - he is the target of hit men and women everywhere.
+              </section>
+            </div>
+
+          </li>
+
+          <li>
+
+            <div class="time">
+              Prescrise
+            </div>
+
+            <div class="name-year-rating">
+              <h3> Avengers: Endgame  (<span class="year">2010</span>)</h3>
+              <p>Rating: 9.2</p>
+            </div>
+
+            <div class="image-describe">
+              <img class="image" src="https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg" alt="Nu exista">
+              <section class="describe">
+                After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to undo Thanos' actions and restore order to the universe.
+              </section>
+            </div>
+
+          </li>
+
+          <li>
+
+            <div class="time">
+              Prescrise
+            </div>
+
+            <div class="name-year-rating">
+              <h3>  Captain Marvel  (<span class="year">2029</span>)</h3>
+              <p>Rating: 9.8</p>
+            </div>
+
+            <div class="image-describe">
+              <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8DuHKG6zImo-VGPwYk-GgGCkym51VC3jYz49rgUQoTxh2hxmH" alt="Nu exista">
+              <section class="describe">
+                Carol Danvers becomes one of the universe's most powerful heroes when Earth is caught in the middle of a galactic war between two alien races.
+              </section>
+            </div>
+
+          </li>
+
+        </ul>
+
+      </div>
+
+    </main>
+
+  </body>
+</html>

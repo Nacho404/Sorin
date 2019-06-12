@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Movie Tracker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Crimson+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/addMovies.css">
+    <link rel="stylesheet" href="css/movies.css">
+    <link rel="stylesheet" href="css/sort.css">
+    <link rel="stylesheet" href="css/search.css">
+    <script src="script/sort.js" charset="utf-8" defer></script>
+    <script src="script/whenWasPosted.js" charset="utf-8" defer></script>
+    <script src="script/addMovie.js" charset="utf-8" defer></script>
+    <script src="script/search.js" charset="utf-8" defer></script>
+    
+
+    </script>
+  </head>
+  <body>
+<!-- Prezentare site  -->
+    <div id="home-interaction">
+        <h1>Movie Tracker</h1>
+        <p><i class="fas fa-film"></i> Alegerea ta conteaza!</p>
+    </div>
+    
+<!-- Bara de navigatie -->
+    <nav id="my-navbar" class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#" onclick="backToMovies()">Filme</a>
+            </li>
+           
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Cauta film" aria-label="Search">
+            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+
+
+    <main class="d-flex flex-column flex-md-row-reverse">
+<!-- Adaugare filme  -->
+      <div class="add-movie">
+        <h2>Adauga film</h2>
+        <form>
+          <p>Nume: </p>
+          <input class="movie-name form-control" type="text" autocomplete="off" placeholder="Numele filmului...">
+          <section id="warning-mn"></section>
+
+          <p>Descriere(minim 30 cuvinte): </p>
+          <input class="movie-describe form-control" type="text" autocomplete="off" placeholder="Descrierea filmului...">
+          <section id="warning-md"></section>
+
+          <p>Imagine (introduceti url-ul imaginii): </p>
+          <input class="movie-image form-control" type="text" autocomplete="off" placeholder="Url imagine...">
+          <section id="warning-mi"></section>
+
+          <p>An: </p>
+          <input class="movie-release form-control" type="number" autocomplete="off" placeholder="An lansare film...">
+          <section id="warning-mre"></section>
+
+          <p>Rating(0-10): </p>
+          <input class="movie-rating form-control" type="number" autocomplete="off" placeholder="Rating film...">
+          <section id="warning-mra"></section>
+
+          <button type="button" class="add-btn btn btn-outline-dark">
+            Adauga film
+          </button>
+
+        </form>
+
+      </div>
+
+<!-- Lista filmelor -->
+      <div class="movies">
+        <h2>Filme</h2>
+
+        <div id="section-of-sort">
+            <p>Sortare dupa:</p>
+            <div class="sorted-by">
+                <section id="expand-by">Lista initiala</section>
+                <div class="options-sort-by">
+                <section>Lista initiala</section>
+                <section>Nume</section>
+                <section>An</section>
+                <section>Rating</section>
+                <section>Data adaugarii</section>
+                </div>
+            </div>
+
+            <p>Ordinea sortarii:</p>
+            <div class="sorted-how">
+                <section id="expand-how">Crescator</section>
+                <div class="options-sort-how">
+                <section>Crescator</section>
+                <section>Descrescator</section>
+                </div>
+            </div>
+
+        </div>
+
+        <ul id="original-list">
+
+          <li>
+
+            <div class="time">
+              
+            </div>
+
+            <div class="name-year-rating d-flex justify-content-between">
+              <h3>John Wick: Chapter 3 - Parabellum (<span class="year">2019</span>)</h3>
+              <p><i class="far fa-star"></i> 9</p>
+            </div>
+
+            <div class="image-describe d-flex flex-column flex-md-row align-items-center justify-content-between">
+              <img class="image img-thumbnail" src="https://cdn3.movieweb.com/i/movie/aLN4K1XoKQA0LfzHhufVMVp3My00zQ/384:50/John-Wick-3-Parabellum.jpg" alt="Nu exista">
+              <section class="describe">
+                Super-assassin John Wick is on the run after killing a member of the international assassin's guild, and with a $14 million price tag on his head - he is the target of hit men and women everywhere.
+              </section>
+            </div>
+
+          </li>
+
+          <li>
+
+            <div class="time">
+              Prescrise
+            </div>
+
+            <div class="name-year-rating d-flex justify-content-between">
+              <h3> Avengers: Endgame  (<span class="year">2010</span>)</h3>
+              <p><i class="far fa-star"></i> 9.2</p>
+            </div>
+
+            <div class="image-describe d-flex flex-column flex-md-row align-items-center justify-content-between">
+              <img class="image img-thumbnail" src="https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg" alt="Nu exista">
+              <section class="describe">
+                After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to undo Thanos' actions and restore order to the universe.
+              </section>
+            </div>
+
+          </li>
+
+          <li>
+
+            <div class="time">
+              Prescrise
+            </div>
+
+            <div class="name-year-rating d-flex justify-content-between">
+              <h3>  Captain Marvel  (<span class="year">2029</span>)</h3>
+              <p><i class="far fa-star"></i> 9.8</p>
+            </div>
+
+            <div class="image-describe d-flex flex-column flex-md-row align-items-center justify-content-between">
+              <img class="image img-thumbnail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8DuHKG6zImo-VGPwYk-GgGCkym51VC3jYz49rgUQoTxh2hxmH" alt="Nu exista">
+              <section class="describe">
+                Carol Danvers becomes one of the universe's most powerful heroes when Earth is caught in the middle of a galactic war between two alien races.
+              </section>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <ul id="movies-sorted">
+          
+        </ul>
+
+      </div>
+
+    </main>
+
+    <div id="searched">
+      <div>
+        <p>Filmul nu a putut fii cautat - va rugam sa incercati alta combinatie de litere</p>
+        <button type="button" class="add-btn btn btn-outline-dark">Intoarce-te la filme</button>
+      </div>
+
+      <ul>
+
+      </ul>
+    </div>
+
+
+    <footer>
+        <p>Movie Tracker este un site destinat utilizatorilor ce vor informatii legate de filmele aparute si de cele care vor urma sa apara</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+  </body>
+</html>

@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,h4 {
+  font-family: 'Roboto Mono', monospace;
+  color: #04bde7;
+}
+
+main {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* Stilizare adaugare produse */
+.add-movie {
+  padding: 0 5px;
+}
+
+.add-movie h2 {
+  font-family: 'Roboto Mono', monospace;
+  color: #04bde7;
+}
+
+.add-movie p {
+  color: gray;
+  font-weight: 700;
+  font-size: 120%;
+  font-family: 'Lobster', cursive;
+}
+
+.add-movie input {
+  padding: 6px 3px;
+  border-radius: 5px;
+  background: linear-gradient(to right, black 70%, #cddbdb, #959090);
+  color: #0277ca;
+  font-weight: 700;
+}
+
+.add-movie input::placeholder {
+  font-weight: 700;
+  color: #0277ca;
+}
+
+.add-movie input:focus {
+  outline: none;
+  border: 2px solid #04bde7;
+}
+
+.add-movie span {
+  background-color: #0277ca;
+  color: white;
+  padding: 3px 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  display: block;
+  width: fit-content;
+}
+
+/* Stilizare lista filme */
+.movies {
+  padding: 0 50px;
+}
+
+.movies h2 {
+  font-family: 'Roboto Mono', monospace;
+  color: #04bde7;
+}
+
+.movies .sorted-by {
+  background-color: #0277ca;
+  border: 2px gray solid;
+  width: fit-content;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.movies .sorted-by section {
+  padding: 5px;
+  color: white;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.movies .sorted-by .options-sort section:hover {
+  background-color: #04bde7;
+}
+
+
+.movies ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.movies ul li {
+  box-shadow: 0 0 9px -2px black;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid gray;
+}
+
+.movies ul .time {
+  position: relative;
+  top:-20px;
+  left: 50%;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid gray;
+  width: fit-content;
+  padding: 3px;
+}
+
+.movies ul .name-year-rating h3, p {
+  color: #04bde7;
+}
+
+.movies ul .name-year-rating {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movies ul .image-describe {
+  display: flex;
+}
+
+.movies ul .image-describe img {
+  height: 200px;
+  width: 150px;
+  margin-right: 10px;
+}
+
+.movies ul .image-describe .describe {
+  color: #04bde7;
+  font-weight: 500;
+  font-family: 'Lobster', cursive;
+}

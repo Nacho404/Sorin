@@ -1,0 +1,80 @@
+/* #736357
+#15c8d1
+maybe #ff5722
+
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(https://images.unsplash.com/photo-1529798856831-427dfd0a1ab1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80);
+}
+
+#home-interaction {
+    height: 100px;
+    background-color: rgb(239, 243, 247);
+}
+
+#home-interaction h1 {
+    margin:0;
+    color: #736357;
+    padding-top: 10px;
+    padding-left: 50px;
+    font-family: 'Crimson Text', serif;
+}
+
+#home-interaction p {
+    margin:0;
+    color: #736357;
+    padding-top: 10px;
+    padding-left: 80px;
+    font-family: 'Acme', sans-serif;
+    height: fit-content;
+}
+
+#home-interaction p .fas {
+    color:  #15c8d1;
+    font-size: 180%;
+}
+
+#my-navbar {
+    background-color: #15c8d1 !important;
+}
+
+#my-navbar ul li a {
+    color: #736357 !important;
+    font-family: 'Acme', sans-serif;
+    font-weight: 400;
+}
+
+
+
+#my-navbar form input:focus {
+    box-shadow: 0 0 0 0.2rem rgba(115, 99, 87, 0.7);
+}
+
+#my-navbar form input::placeholder {
+    font-family: 'Crimson Text', serif;
+    color: #15c8d1;
+}
+
+#my-navbar form input {
+    font-family: 'Crimson Text', serif;
+    color: #15c8d1;
+}
+
+#my-navbar form button {
+    border-color: #736357 ;
+}
+
+#my-navbar form button:hover {
+    background-color: #736357 ;
+    border-color: wheat ;
+}
+
+

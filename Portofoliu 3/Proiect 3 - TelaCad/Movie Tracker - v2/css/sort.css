@@ -1,0 +1,77 @@
+
+#section-of-sort {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#section-of-sort p {
+    margin: 0 15px 0 15px;
+}
+
+#section-of-sort .sorted-by {
+    border: 1px solid #736357;
+    border-radius: 5px;
+    height: fit-content;
+    width: 120px;
+}
+
+#section-of-sort .sorted-by section {
+    padding: 5px;
+    background-color: #736357;
+    color: rgb(239, 243, 247);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#section-of-sort .options-sort-by section {
+    background-color: #15c8d1;
+}
+
+#section-of-sort .options-sort-by section:hover {
+    background-color: #736357;
+}
+
+
+#section-of-sort .sorted-how {
+    border: 1px solid #736357;
+    border-radius: 5px;
+    height: fit-content;
+    width: 103px;
+}
+
+#section-of-sort .sorted-how section {
+    padding: 5px;
+    background-color: #736357;
+    color: rgb(239, 243, 247);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#section-of-sort .options-sort-how section {
+    background-color: #15c8d1;
+}
+
+#section-of-sort .options-sort-how section:hover {
+    background-color: #736357;
+}
+
+
+#section-of-sort .options-sort-how, .options-sort-by {
+    display: none; 
+}
+
+#movies-sorted {
+    display: none;
+}
+
+/* Pentru javascript */
+
+.show {
+    display: block !important;
+}
+
+#movies-sorted.showListSorted {
+    display: block;
+}
+
+

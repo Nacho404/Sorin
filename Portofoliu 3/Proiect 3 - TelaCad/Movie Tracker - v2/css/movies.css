@@ -1,0 +1,100 @@
+
+main .movies {
+    background-color: rgb(239, 243, 247);
+    height: fit-content;
+    margin: 20px 15px 20px 20px;
+    padding: 0 30px 20px 30px;
+    box-shadow: 1px 1px 1px 1px #736357,
+                2px 2px 2px 2px rgb(153, 154, 155);
+}
+
+.movies h2 {
+    padding-top:30px;
+    color: #736357;
+    font-family: 'Crimson Text', serif;
+}
+
+.movies ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.movies ul li {
+    margin-top: 30px;
+}
+
+.movies ul img {
+    height: 300px;
+    width: 200px;
+}
+
+.movies i {
+    color: #ff5722;
+    font-size: 120%;
+    margin-right: 5px;
+}
+
+.movies ul li p {
+    font-size: 150%;
+    font-weight: 700;
+    font-family: 'Acme', sans-serif;
+    display: flex;
+    align-items: center;
+    margin:0;
+}
+
+.movies ul h3 {
+    padding-top:30px;
+    color: #736357;
+    font-family: 'Crimson Text', serif;
+}
+
+.movies ul h3 span {
+    color: #15c8d1;
+    font-family: 'Acme', sans-serif;
+}
+
+.movies ul li section {
+    padding: 50px;
+    font-family: 'Acme', sans-serif;
+    font-style: oblique;
+    font-size: 105%;
+}
+
+.movies .time {
+    position: relative;
+    top: -15px;
+    left: 43%;
+    background-color: rgb(239, 243, 247);
+    width: fit-content;
+    padding: 0 5px 0 5px;
+    border-top: 1px solid #736357;
+    border-bottom: 1px solid #736357;
+    border-radius: 10px;
+    font-family: 'Acme', sans-serif;
+    color: #ff5722;
+}
+
+.movies ul li {
+    border-top: 1px solid #736357;
+}
+
+footer {
+    margin-top: 30px;
+    min-height: 70px;
+    background-image: radial-gradient(#736357 2%, #c43e1588 10%, #736357 );
+}
+
+footer p {
+    font-size: 150%;
+    font-weight: 700;
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+    color: rgb(239, 243, 247);
+    margin:0;
+}
+
+
+
+

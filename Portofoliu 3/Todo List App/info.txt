@@ -1,0 +1,5 @@
+Pentru utilizarea corecta a site-ului realizati urmatoare instructiuni:
+	- Descidere site
+	- Scrieti "quit" in "prompt"
+	- Deschideti "consola"
+	- Reincarcati pagina
