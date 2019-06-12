@@ -1,0 +1,154 @@
+
+/* Cosul meu */
+
+#shopping {
+    padding:30px;
+    display: none; /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+}
+
+#shopping h2 {
+    color: #22a7f0;
+    font-family: 'Gugi', cursive;
+    font-size: 2rem;
+}
+
+/* #shopping .content-shop {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-gap: 20px;
+} */
+
+#shopping .content-shop section {
+    border-radius: 5px;
+    box-shadow: 0 1px 15px -3px black;
+    padding:10px;
+}
+
+#shopping .content-shop section .cart {
+    height: 200px;
+    max-height: 200px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    margin: 25px 15px;
+    box-shadow: 0 1px 15px -3px black;
+    border: 0.2px solid rgba(128, 128, 128, 0.486);
+}
+
+
+/* @media (max-width: 975px) {
+    #shopping .content-shop {
+        grid-template-columns: 1fr;
+    }
+} */
+
+
+.number-products {
+    border-radius: 5px;
+    border:2px solid rgb(83, 83, 83);
+    width: 70px;
+    cursor: pointer;
+    width:fit-content;
+    display: flex;
+}
+
+.number-products .click-expand {
+    background-color: rgb(83, 83, 83);
+    text-align: center;
+    padding: 3px;
+    border-radius: 3px;
+    font-weight: 800;
+    width:40px
+}
+
+.number-products main div {
+    text-align: center;
+    padding: 3px;
+    border-radius: 3px;
+    font-weight: 800;
+    width:40px
+}
+
+.number-products main div:hover {
+    background-color: rgba(155, 151, 151, 0.61);
+    color: #eff3f7;
+}
+
+.number-products main {
+    display:none;
+    background-color: #eff3f7;
+}
+
+.number-products .showExpand {
+    display: flex;
+}
+
+.number-products span {
+    text-align: center;
+    padding: 3px;
+    border-radius: 3px;
+    font-weight: 800;
+    background-color: #22a7f0;
+    display: block;
+}
+
+#your-cart {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    min-height: 300px;
+}
+
+.cart {
+    padding: 10px;
+}
+
+.cart h3,h4 {
+    color: #22a7f0;
+    font-family: 'Gugi', cursive;
+    margin:0;
+    padding:5px;
+}
+
+.cart h3 span {
+    color: gray;
+    font-style: initial;
+    font-family:'Roboto Condensed', sans-serif;
+}
+
+.cart h4 span {
+    color: gray;
+    font-style: initial;
+    font-family:'Roboto Condensed', sans-serif;
+}
+
+.cart div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart div .erase-cart {
+    color: tomato;
+    font-weight: 500;
+    font-style: oblique;
+    cursor: pointer;
+} 
+
+.cart div .erase-cart:hover {
+    color: royalblue;
+}
+
+.empty-cart {
+    background-color: rgba(128, 128, 128, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.empty-cart h1 {
+    color: royalblue;
+    font-weight: 700;
+    font-style: oblique;
+}
+

@@ -1,0 +1,76 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tabela interactiva</title> 
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js" defer></script>
+        <script src="sort.js" defer></script>
+        <script src="functionsMenu.js" defer></script>
+        <script src="dateType.js" defer></script>
+        
+    </head>
+    <body>
+        <div class="functions-menu">
+            <h3>Functionalitati tabela: </h3>
+            <div>
+                <!-- onclick="showOptionsForSort()" -->
+                <button id="sort-btn">Sortare</button>
+                <ul class="sort-options">
+                    <li id="sort-up">De la A la Z</li>
+                    <li id="sort-down">De la Z la A</li>
+                </ul>
+                <button id="filter-btn">Add filter</button>
+                <button id="tip-date-btn">Tip Date</button>
+                <ul class="tip-date">
+                    <li>text</li>
+                    <li>numar</li>
+                    <li>data calendaristica</li>
+                    <li>ora</li>
+                </ul>
+            </div>
+            
+
+        </div>
+        <table>
+            <tbody>
+                <tr class="line-of-remove">
+                    <td class="useless"></td>
+                    <td class="remove" onclick="removeColumns()"></td>
+                    <td class="remove" onclick="removeColumns()"></td>
+                    <td class="remove" onclick="removeColumns()"></td>
+                </tr>
+                <tr>
+                    <td class="remove" onclick="removeLines()"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td class="remove" onclick="removeLines()"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td class="remove" onclick="removeLines()"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td id="add-lines" class="add" onclick="addLines()">+</td>
+                </tr>
+                <tr>
+                    <td class="useless"></td>
+                    <td class="useless"></td>
+                    <td class="useless"></td>
+                    <td id="add-columns" class="add" onclick="addColumns()">+</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- <select></select>
+        <ul class="filter-options">
+            
+        </ul> -->
+    </body>
+</html>

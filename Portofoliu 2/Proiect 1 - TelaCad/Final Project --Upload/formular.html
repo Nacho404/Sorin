@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>formular</title>
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="formularStyle.css">
+    <!-- Este posibil ca link-ul de pe netlify sa nu mearga -->
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="title-page">
+                <a href="formular.html">Formular</a>
+            </li>
+            <li><a href="index.html">Prima Pagina</a></li>
+            <li class="separator"></li>
+            <li><a href="blogFaraCss//blog.html" target="_blank">Blog fara Css</a></li>
+            <li class="separator"></li>
+            <li><a href="blogCuCss//blog.html" target="_blank">Blog cu Css</a></li>
+            <li class="separator"></li>
+            <li><a href="blogInteractiv//blog.html" target="_blank">Blog interactiv</a></li>
+            <li class="separator"></li>
+            <li><a href="ceas.html">Ceas</a></li>
+            <li class="separator"></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li class="separator"></li>
+            <li><a href="formular.html">Formular</a></li>
+            <li class="separator"></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li class="left-side separator media"></li>
+            <li><a href="proiectReplicaPhoto//indexReplica.html" target="_blank">Inbox</a></li>
+            <li class="separator"></li>
+            <li><a href="https://app.netlify.com/drop/gallant-bose-391e0d" target="_blank">Link proiect netlify</a></li>
+            <li class="separator"></li>
+                
+        </ul>
+    </nav>
+    <div id="container">
+        <h1>Formular</h1>
+        <form action="" method="get">
+            <label for="name">Nume:</label>
+            <input type="text" id="name" onkeyup="upperCaseFirstLetter()">
+
+            <label for="age">Varsta:</label>
+            <input type="number" id="age" onkeyup="ageInterval()" min="18" max="75">
+
+            <label for="phoneNumber">Telefon:</label>
+            <input type="text" id="phoneNumber" onkeyup="spacedPhoneNumber()">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+
+            <label for="city">Oras:</label>
+            <select id="city" onchange="readOnly()">
+                <option id="b">Bucuresti</option>
+                <option id="c">Constanta</option>
+                <option id="t">Timisoara</option>
+                <option id="br">Brasov</option>
+                <option id="p">Ploiesti</option>
+            </select>
+
+            <label for="text">Read-only:</label>
+            <p id="read-only">Generez eu text din JS</p>
+
+            <label for="search">Cauta:</label>
+            <input type="search" id="search">
+
+            <button type="submit" onclick="validEmail()">Trimite</button>
+        </form>
+    </div>
+    
+
+    <script src="formularScript.js"></script>
+</body>
+</html>

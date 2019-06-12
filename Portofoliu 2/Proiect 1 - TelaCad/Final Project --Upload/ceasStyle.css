@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1535476814805-3c1c8febb524?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0 30%;
+    margin: 0;
+    padding:0;
+}
+
+/* Bara navigatie **************************************************************************** */
+nav {
+    padding: 0;
+    margin: 0;
+    background-color: #FFFFFF;
+    position: fixed;
+    height: 100%;
+    width: 250px;
+    font-family: "Lato";
+}
+
+nav ul {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+}
+
+nav ul li {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #777;
+    display: block;
+    width: 100%;
+    padding: 11px 0;
+    padding-left: 5px;
+    border-radius: 3px;
+    text-shadow: -5px -3px 2px #2c3e5044;
+}
+
+nav ul .title-page {
+    margin-bottom: 20px;
+    width: 100%;
+    margin-left:0;
+    margin-right:0;
+}
+
+nav ul .title-page a {
+    background-color: #2c3e50;
+    color: #fff;
+    height: 70px;
+    font-size: 25px;
+    padding: 22.5px 0;
+    padding-left: 20px;
+}
+
+nav ul li a:hover {
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+.separator {    
+    height: 1px;
+    width: 80%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.75), #2c3e5083 , rgba(255, 255, 255, 0.75));
+}
+
+#container {
+    height: 100%;
+    margin-left: 300px;
+    background-color:#f2f2f2;
+    position: relative;
+    top: 50px;
+    margin-right: 50px;
+    border-radius: 5px;
+
+}
+
+/* Bara navigatie **************************************************************************** */
+
+#clock {
+    display:flex;
+    justify-content: center;
+    font-size: 200px;
+}

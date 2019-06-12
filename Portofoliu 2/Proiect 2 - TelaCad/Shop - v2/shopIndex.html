@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Magazin online - SPA</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+    <link rel="stylesheet" href="css/shopStyle.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/addProducts.css">
+    <link rel="stylesheet" href="css/myCart.css">
+    <script src="shopScript.js" defer></script>
+    <script src="sortPriceBigger.js" defer></script>
+    <script src="sortPriceLower.js" defer></script>
+    <script src="sortTitleBigger.js" defer></script>
+    <script src="sortTitleLower.js" defer></script>
+    <script src="addInCart.js" defer></script>
+</head>
+<body>
+    
+    <nav>  
+        <ul class="principal">
+            <li class="left-side"><a href="#home">Easy-Shop Easy-Life</a></li>
+            <li class="hamburger-btn">
+                <button id="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </li>
+            <ul class="right-side">
+                <li title="Produse"><i class="fas fa-store"></i><a href="#product"> Produse</a></li>
+                <li title="Adaugare produse"><i class="fas fa-plus"></i><a href="#addProduct"> Adauga produse</a></li>
+                <li title="Cosul tau"><i class="fas fa-cart-arrow-down"></i><a href="#shopping">Cosul meu <span>0</span></a></li>
+            </ul>
+        </ul>
+    </nav>
+
+    <div id="main-page">
+        <div id="welcome">
+            <h1>Bun venit!</h1>
+        </div>
+        <div id="products">
+            <h2>Produse</h2>
+            <p class="order">Ordoneaza dupa:</p>
+            <ul>
+                <li id="sort-initial">
+                    >> Ordonare initiala 
+                    <footer>
+                        <h4></h4>
+                    </footer>
+                </li>
+                <li id="sort-price-bigger">
+                    >> Pret - crescator 
+                    <footer>
+                        <h4></h4>
+                    </footer>
+                </li>
+                <li id="sort-price-lower">
+                    >> Pret - descrescator 
+                    <footer>
+                        <h4></h4>
+                    </footer>
+                </li>
+                <li id="sort-title-bigger">
+                    >> Titlu - crescator 
+                    <footer>
+                        <h4></h4>
+                    </footer>
+                </li>
+                <li id="sort-title-lower">
+                    >> Titlu - descrescator 
+                    <footer>
+                        <h4></h4>
+                    </footer>
+                </li>
+            </ul>
+            <div id="cards-section">
+                <section class="product-card">
+                    <img src="defaultCard.jpg" alt="">
+                    <h3>Telefon mobil Samsung Galaxy S8, 64GB, 4G, Midnight Black</h3>
+                    <p>2.399<span>99</span>lei</p>
+                    <div class="add"> Adauga in cos  <i class="fas fa-cart-arrow-down"></i></div>
+                </section>
+    
+                <section class="product-card">
+                    <img src="defaultCard.jpg" alt="">
+                    <h3>Telefon mobil Huawei P20 Lite, Dual SIM, 64GB, 4G, Midnight Black</h3>
+                    <p>999<span>99</span>lei</p>
+                    <div class="add"> Adauga in cos  <i class="fas fa-cart-arrow-down"></i></div>
+                </section>
+                
+                <section class="product-card">
+                    <img src="defaultCard.jpg" alt="">
+                    <h3>Televizor LED Smart Samsung, 100 cm, 40NU7122, 4K Ultra HD</h3>
+                    <p>1.399<span>99</span>lei</p>
+                    <div class="add"> Adauga in cos  <i class="fas fa-cart-arrow-down"></i></div>
+                </section>
+                
+                <section class="product-card">
+                    <img src="defaultCard.jpg" alt="">
+                    <h3>Set 4 anvelope vara Michelin Cross Climate XL, cu marcaje de iarna, 195/65 R15 95V</h3>
+                    <p>1.249<span>49</span>lei</p>
+                    <div class="add"> Adauga in cos  <i class="fas fa-cart-arrow-down"></i></div>
+                </section>
+
+                
+            </div>
+
+        </div>
+
+        <div id="add-products">
+            <h2>Adauga produse</h2>
+            <div>
+                <p>Titlu:</p>
+                <input type="text" placeholder="Titlu produs..." id="title-product" autocomplete="off">
+                <p>Pret:</p>
+                <input type="text" placeholder="Pret produs..." id="price-product" autocomplete="off">
+                <button id="add-product">Adauga produsul</button>
+            </div>
+        </div>
+
+        <div id="shopping">
+            <h2>Cosul meu</h2>
+            <div class="content-shop">
+                <section id="your-cart">
+                   
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

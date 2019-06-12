@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Proiectul 2</title>
+  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">  
+  <link rel="stylesheet" href="index.css"> 
+  <link rel="stylesheet" href="css/products.css">
+  <link rel="stylesheet" href="css/addProducts.css">
+  <link rel="stylesheet" href="css/sorted.css">
+  <script src="index.js" defer></script>
+  
+
+</head>
+<body>
+  <nav id="menu">
+    <ul>
+      <li class="hom">
+        <a href="/">Acasa</a>
+      </li>
+      <li class="prod">
+        <a href="/products">Produse</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section id="anime">
+    <div class="area-animated">
+      
+    </div>
+
+
+   
+    <div class="content">
+      <div id="home">
+        <img src="money.jpg" alt="">
+        <h1>WORK HARD & DREAM BIG.</h1>
+        <p>Be self motivated,</p>
+        <p>Because no one is going to push you!</p>
+        <a href="#" id="motivation">-- click to be motivated --</a>
+      </div>
+
+      <div id="add">
+        <h2>Adaugă un produs nou</h2>
+        <form action="">
+          <input name="product-name" placeholder="Nume produs" autocomplete="off">
+          <input type="number" step="0.01" name="price" placeholder="Pret" autocomplete="off">
+          <button type="submit">Adauga</button>
+        </form>
+      </div>
+
+      <div id="products">
+        <h2>Produse</h2>
+
+        <div class="options">
+
+          <p class="first-impact">Relevanta</p>
+          <section>
+            <p id="initial">Initial</p>
+            <p id="sorted-abc">Produse ordonate alfabetic</p>
+            <p id="sorted-price">Produse ordonate dupa pret</p>
+            <p id="filtered-price-smaller100">Produse sub 100$</p>
+            <p id="filtered-price-bigger100">Produse peste 100$</p>
+          </section>
+        
+        </div>
+
+        <ul></ul>
+      </div>
+
+      <div id="sorted">
+        <ul>
+        </ul>
+      </div>
+    </div>
+
+    <div class="area-animated">
+      
+    </div>
+  </section>
+
+</body>
+</html>

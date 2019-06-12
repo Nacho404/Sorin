@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="calculatorStyle.css">
+    <!-- Este posibil ca link-ul de pe netlify sa nu mearga -->
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="title-page">
+                <a href="calculator.html">Calculator</a>
+            </li>
+            <li><a href="index.html">Prima Pagina</a></li>
+            <li class="separator"></li>
+            <li><a href="blogFaraCss//blog.html" target="_blank">Blog fara Css</a></li>
+            <li class="separator"></li>
+            <li><a href="blogCuCss//blog.html" target="_blank">Blog cu Css</a></li>
+            <li class="separator"></li>
+            <li><a href="blogInteractiv//blog.html" target="_blank">Blog interactiv</a></li>
+            <li class="separator"></li>
+            <li><a href="ceas.html">Ceas</a></li>
+            <li class="separator"></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li class="separator"></li>
+            <li><a href="formular.html">Formular</a></li>
+            <li class="separator"></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li class="left-side separator media"></li>
+            <li><a href="proiectReplicaPhoto//indexReplica.html" target="_blank">Inbox</a></li>
+            <li class="separator"></li>
+            <li><a href="https://app.netlify.com/drop/gallant-bose-391e0d" target="_blank">Link proiect netlify</a></li>
+            <li class="separator"></li>
+                
+        </ul>
+    </nav>
+    <div id="container">
+        <div class="calculator">
+            <input type="text" id="input" onkeyup="clearLetters()">
+            <span>Result: </span>
+            <div class="buttons">
+                <button onclick="writeIn7()">7</button>
+                <button onclick="writeIn8()">8</button>
+                <button onclick="writeIn9()">9</button>
+                <button onclick="writeInDiv()">/</button>
+                <button onclick="writeInMod()">%</button>
+                <button onclick="writeIn4()">4</button>
+                <button onclick="writeIn5()">5</button>
+                <button onclick="writeIn6()">6</button>
+                <button onclick="writeInAmp()">*</button>
+                <button onclick="clearInput()">C</button>
+                <button onclick="writeIn1()">1</button>
+                <button onclick="writeIn2()">2</button>
+                <button onclick="writeIn3()">3</button>
+                <button onclick="writeInDec()">-</button>
+                <button onclick="calculate()">=</button>
+                <button onclick="writeIn0()">0</button>
+                <button onclick="writeInDot()">.</button>
+                <button onclick="writeInIcr()">+</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="calculatorScript.js"></script>
+</body>
+</html>

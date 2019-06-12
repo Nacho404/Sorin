@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    overflow: scroll;
+    margin: 0 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table td {
+    width: 70px;
+    height: 28px;
+    padding: 0;
+    /* border: 1px solid  rgb(18, 111, 233); */
+    
+}
+
+.remove, .add {
+    text-align: center;
+    cursor: pointer;
+    min-width: 70px;
+    min-height: 28px;
+    font-size: 1.5rem;
+}
+
+.useless {
+    border:0;
+}
+
+
+.removeColumn {
+    background-color: rgba(255, 0, 0, 0.534);
+}
+
+.removeLine {
+    background-color: rgba(255, 0, 0, 0.534);
+}
+
+
+table input {
+    width: 70px;
+    height: 28px;
+    margin:0;
+    background-color:rgba(18, 111, 233, 0.452);
+}
+
+table input:focus {
+    outline: none;
+    background-color:rgba(18, 111, 233, 0.452);
+}
+
+
+.functions-menu{
+    display: flex;
+    align-items: center;
+}
+
+button {
+    height: 30px;
+    margin-left: 50px;
+    background-color:rgba(18, 111, 233, 0.452);
+    cursor: pointer;
+}
+
+.sort-options {
+    position: absolute;
+    list-style-type: none;
+    margin-left: 10px;
+    background-color: rgb(18, 111, 233);
+    padding: 10px;
+    top: 30px;
+    left:233px;
+    color: rgb(212, 206, 206);
+    display: none;
+}
+
+.sort-options li {
+    padding: 3px;
+    cursor: pointer;
+}
+
+.sort-options li:hover {
+    background-color:rgb(87, 137, 202);
+}
+
+.filter-options {
+    list-style-type: none;
+    position: absolute;
+    background-color: rgb(18, 111, 233);
+    padding: 10px;
+    margin: 0;
+    max-width:150px;
+    min-width:150px;
+    min-height: 50px;
+    display: none;
+}
+
+
+
+select {
+    background-color:rgba(18, 111, 233, 0.452);
+    width: 20px;
+    position: absolute;
+    top:25px;
+    left: 47px;
+}
+
+input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+}
+
+.tip-date { 
+    background-color:rgb(18, 111, 233);
+    position: absolute;
+    top:45px;
+    left: 481px;
+    margin:0;
+    padding:0;
+    display: none;
+}
+
+.tip-date li {
+    list-style-type: none;
+    color: rgb(212, 206, 206);
+    padding: 10px;
+}
+
+.tip-date li:hover {
+    background-color:rgb(87, 137, 202);
+}
+
+
+
+
+
+/* Pentru JavaScript */
+
+.show {
+    display: block;
+}

@@ -1,0 +1,4 @@
+Proiectul contine:
+	- Magazin online ( varianta 1 )
+	- Magazin online ( varianta 2 )
+	- Tabela interactiv ( o incercare de a copia Microsoft Office Excel )

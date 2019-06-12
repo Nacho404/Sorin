@@ -1,0 +1,9 @@
+Proiectul contine:
+	- Blog ( doar HTML )
+	- Blog ( HTML si CSS )
+	- Blog ( HTML , CSS si  JS )
+	- Ceas
+	- Calculator
+	- Formular
+	- Calendar
+	- Replica site ( Inbox Mail - old site )

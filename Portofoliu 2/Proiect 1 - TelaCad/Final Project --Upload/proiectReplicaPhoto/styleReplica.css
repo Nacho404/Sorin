@@ -1,0 +1,491 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    padding:0;
+    background-color: #f2f2f2;
+    min-width: 960px;
+}
+
+/* Modificare bara navigatie --> TOP */
+nav {
+    background-color: #4285f4;
+    padding: 0 30px;
+    box-shadow: 3px 3px 10px 3px  rgba(0,0,0, 0.4);
+    position: fixed;
+    width: 100%;
+}
+
+.top-nav-bar {
+    /* background-color: pink; */
+    margin: 0;
+    padding: 0;
+    height: 55px;
+    overflow: hidden;
+
+}
+
+
+.top-nav-bar li {
+    list-style-type: none;
+    font-size: 1.2rem;
+    /* background-color: red; */
+    display: inline-block;
+}
+
+.top-nav-bar a {
+    text-decoration: none;
+}
+
+/* link -->> Inbox */
+.top-nav-bar .inbox a {
+    color: #ffffff;
+    display: flex;
+    height: 55px;
+    align-items: center;
+    margin-left: 20px;
+} 
+
+/* Modific Input -->> Search */
+.top-nav-bar .search {
+    width: 70%;
+    padding-left: 130px ;
+}
+
+input[type=search] {
+    color: #ffffff;
+    background: url(http://www.gstatic.com/images/icons/material/system/1x/search_white_24dp.png)
+    ,  linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255,255,255, 0.2), rgba(255,255,255, 0.1)) ;
+    background-repeat: no-repeat;
+    background-position-x: 2%;
+    background-position-y: center;
+    height: 35px;
+    width: 100%;
+    padding: 5px 5px 5px 60px;
+    border:0;
+    border-radius: 4px;
+    font-size: 1.1rem;
+}
+input[type=search]::placeholder {
+    color:#ffffff;
+}
+input[type=search]:focus {
+    outline: none;
+}
+input[type=search]:hover {
+    background: url(http://www.gstatic.com/images/icons/material/system/1x/search_white_24dp.png)
+    ,  linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255,255,255, 0.3), rgba(255,255,255, 0.2)) ;
+    background-repeat: no-repeat;
+    background-position-x: 2%;
+    background-position-y: center;
+}
+
+
+
+
+.top-nav-bar .icons.no {
+    padding-left: 20px;
+}
+.top-nav-bar .icons.no i {
+    display: inherit;
+    color: #ffffff;
+}
+
+.top-nav-bar .icons.nt {
+    padding-left: 50px;
+}
+.top-nav-bar .icons.nt a {
+    color:#ffffff;
+}
+
+
+/* Link meniu din ->> Stanga */
+.menu-left  {
+    position: relative;
+    top: 5px;
+}
+.menu-left a:hover span {
+    background-color: #ffffff;
+}
+.menu-left span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #d0e0fc;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+/* Link meniu din ->> Dreapta */
+.menu-right{
+    float: right;
+    height: 55px;
+    padding-top: 15px;
+}
+.menu-right a {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.menu-right span {
+    width: 4px;
+    height: 4px;
+    background-color: #ffffff;
+    margin: 1px 1px;
+}
+
+/* Modific Iconita Userului */
+.initial-user {
+    float: right;
+    margin-left: 20px;
+}
+.initial-user a {
+    margin:0;
+    background-color: purple;
+    width: fit-content;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: white;
+    margin-top: 5px;
+}
+
+/* Modificare bara navigatie --> LEFT */
+
+menu {
+    margin: 0;
+    padding: 0;
+    width:227.33px;
+    overflow: auto;
+    height: 100%;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    position: fixed;
+    margin-top: 55px;
+}
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+/* Modificare ScrollBar pentru bara de nabigatie -->>LEFT */
+/* https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
+
+menu::-webkit-scrollbar {
+    width: 7px;
+    
+}
+
+/* Spatiul scroll-ului */
+menu::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0); 
+
+}
+
+/* Partea care se misca din Scroll */
+menu:hover::-webkit-scrollbar-thumb {
+    background: rgba(136, 136, 136, 0.37); 
+    border-radius: 5px;
+}
+
+
+/* Modificare ScrollBar pentru bara de nabigatie -->>LEFT */
+/* https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+
+.left-nav-bar {
+    /* background-color: rgb(226, 189, 195); */
+    list-style-type: none;
+    overflow: auto;
+    padding: 0;
+    margin:0;
+    padding-bottom: 70px;
+    padding-left: 10px;
+    margin-top: 15px;
+}
+
+/* modificare  "li" cu link-uri meniu -->> LEFT */
+.left-nav-bar li.links {
+    margin-top: 5px;
+    /* background-color: rgba(0, 0, 0, 0.103); */
+    padding-left: 20px;
+    height: 40px;
+    border-radius: 2px;
+}
+
+.left-nav-bar .left-inbox {
+    background-color: rgba(0, 0, 0, 0.068);
+}
+
+.left-nav-bar .left-inbox a {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: black;
+}
+
+.left-nav-bar .left-thing a {
+    color: #8e8e8e;
+    font-size: 0.8rem;
+}
+
+.left-nav-bar .left-thing:hover {
+    background-color: rgba(0, 0, 0, 0.068);
+}
+
+
+.left-nav-bar li.links span {
+    padding-left: 20px;
+}
+
+.left-nav-bar .links a {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;   
+}
+
+.left-nav-bar .title-list {
+    font-size: 0.7rem;
+    padding-left: 15px;
+}
+
+.left-nav-bar li hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.5) )
+}
+
+/* Modificare continut site... partea din dreapta a meniului de navigare LEFT */
+.site-content {
+    /* display: grid;
+    grid-template-columns: 2fr 10fr; */
+    padding-top: 55px;
+    /* grid-auto-rows:570px; */
+    margin-left: 230px;
+}
+
+main {
+    padding:0;
+    margin:0;
+    padding-left: 30px;
+    /* margin: 0 130px 0 0; */
+    padding-bottom: 50px;
+    /* height: 300px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(100px, auto); */
+    width: 90%;
+}
+
+main .info-thing {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 25px;
+    font-size: 0.8rem;
+    color: #757575;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+main .initial-public-user {
+    margin:0;
+    background-color: purple;
+    width: fit-content;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: white;
+    margin-top: 5px;
+}
+.initial-public-user a {
+    text-decoration: none;
+    color: white;
+}
+
+.user-public-content{
+    display: flex;
+    justify-content: flex-start;
+    height: 40px;
+}
+.user-public-content p {
+    font-size: 0.8rem;
+    overflow: hidden;
+    width: 90%;
+    height: 20px;
+    margin:0;
+    padding:0;
+    padding-left: 10px;
+    padding-top: 5px;
+    align-self: center;
+}
+
+main .some-public-content {
+    background-color: #f7f7f7;
+    display: grid; 
+    grid-template-columns: 3fr 9fr;
+    padding-left: 20px;
+    /* box-shadow: 2px 2px 10px  rgba(0,0,0, 0.4); sau "pozitie umbra pe Orizontala", "pozitie umbra pe Verticala", "Transparenta", "inaltime umbra"  */
+    box-shadow: 0 0 1px 0.4px #b6b6b6;
+}
+
+.some-public-content .info-public-content {
+    display: flex;
+    align-items: center;
+}
+
+/* white-space: nowrap "face in asa fel, ca tot paragraful sa fie scris intr-o singura linie... indiferent de lungimea sa !!!!!!" */
+.some-public-content .info-public-content p {
+    padding:0;
+    margin:0;
+    width: 98.5%;
+    height: 17px;
+    overflow: hidden;
+    font-size: 0.8rem;
+    color: #757575;
+}
+.some-public-content .info-public-content p strong {
+    color: black;
+}
+
+.some-public-content .info-public-content .little-menu {
+    background-color: #f7f7f7;
+    height: 97%;
+    width: 20%;
+    display: none;
+}
+.some-public-content .info-public-content:hover .little-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.some-public-content .info-public-content:hover p {
+    width: 90%;
+}
+
+.post img {
+    width: 150px;
+    height: 100px;
+    border-radius: 5px;
+}
+.post {
+    background-color:rgba(224, 219, 219, 0.363);
+    box-shadow: -1px -1px 10px 0 rgba(151, 148, 148, 0.377), 1px 1px 5px 0 rgba(151, 148, 148, 0.377);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 60%;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.post div {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.post div p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+}
+.post div p:nth-last-of-type(1){
+    color: #757575;
+}
+
+.attachment-content {
+    padding: 10px 0;
+}
+
+button {
+    border:0;
+    border-radius: 3px;
+    /* background-color: rgb(224, 219, 219); */
+    height: 30px;
+    /* modifica cursorul atunci cand esti cu mouse-ul peste button */
+    cursor: pointer;
+    background-color:rgba(224, 219, 219, 0.363);
+    box-shadow: -1px -1px 10px 0 rgba(151, 148, 148, 0.377), 1px 1px 5px 0 rgba(151, 148, 148, 0.377);
+    /* max-width: 127px;
+    overflow: hidden;
+    padding: 7.5px 5px;
+    font-size: 15px; */
+}
+button:focus {
+    outline: none;
+    border:0;
+}
+
+button i {
+    display: inherit;
+    color: #4285f4;
+    font-size: 15px;
+
+}
+
+main .add-btn {
+    padding: 13px;
+    background-color: #d23f31;
+    margin:0;
+    position: fixed;
+    left: 1250px;
+    top: 550px;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: -1px 1px 10px 0 rgba(17, 17, 19, 0.753);
+}
+
+.info-show {
+    box-shadow: -1px -1px 15px 0 rgba(151, 148, 148, 0.514), 1px 1px 15px 0 rgba(151, 148, 148, 0.5);
+    background-color: #ffffff;
+    border-radius: 2px;
+    width: 32%;
+    padding: 0;
+    padding: 10px 25px;
+    font-size: 0.9rem;
+    position: fixed;
+    top: 75px;
+    right: 20px;
+    display: none;
+}
+
+.info-show p {
+    margin-bottom: 25px;
+}
+
+.info-show div {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.info-show p:nth-last-of-type(2) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-show p  i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 1050px) { 
+    .some-public-content .info-public-content:hover p {
+        width: 75%;
+    }
+}

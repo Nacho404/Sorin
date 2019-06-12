@@ -1,0 +1,872 @@
+body {
+    
+    /* background-attachment: fixed; */
+    /* image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated; */
+    margin: 0;
+}
+
+.ale-luia {
+    background-image: url(https://images.unsplash.com/photo-1512757776214-26d36777b513?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50%;
+    padding-bottom: 50px;
+}
+
+/* Bara de navigatie */
+#nav-bar {
+    background-image: linear-gradient(to bottom, #5e1f24, #ef3948 , #58585b);
+    text-align: right;
+    /* position: fixed;
+    top: 0;
+    width: 100%; */
+}
+
+/* Modific ul */
+#nav-bar ul {
+    margin: 0;
+    height: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 0;
+    /* padding-top: 20px; */
+    overflow: hidden;
+    
+   
+}
+
+/* Modific toate li */
+#nav-bar ul li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 22px 16px;
+    color: rgb(0, 0, 0);
+    
+}
+
+/* Modificare link -- Motivatia */
+#nav-bar .home {
+    float: left;
+    padding: 20px 16px;  /* Acesta linie suprascrie  "Modific toate li (padding: 22px 16px;)" -- specifity */
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+a.nav-link-home {
+    color: white;
+    text-decoration: none;
+}
+
+/* Modificare link --- Despre */
+a.nav-link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 22px 16px;
+}
+i {
+    padding-right: 16px;
+}
+
+a.nav-link:hover {
+    color:white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#nav-bar .about {
+    padding:0;
+}
+
+/* Modificare -- select */
+select {
+    background-color: gray;
+}
+
+/* Modificare input -- text */
+input[type="search"]{
+    border: 3px solid gray;
+    box-sizing: border-box;
+}
+
+input[type="search"]:focus {
+    border: 3px solid black;
+    background-color: #3CBC8D;
+    
+}
+
+/* Modificare Titlu si logo site */
+.logo {
+     background-color: rgba(0, 0, 0, 0.3);  /* rgba(66, 32, 219, 0.3) */
+    border-radius:50px;
+    border:3px dashed rgb(79,185,227);
+    margin:0;
+    padding:0;
+    padding-bottom: 20px;
+    margin: 15px 70px 50px 70px;
+    text-align: center;
+}
+
+div.logo h1::first-letter {
+    font-size: 50px;
+    /* color: rgba(72, 73, 72, 0.3); */
+    color: rgba(60, 188, 141);
+}
+
+div.logo h1:hover {
+    background-color: rgba(255,255,0,0.4);
+    border-left: dashed 4px black;
+    border-right: dashed 4px black;
+    border-radius: 100px;
+    font-weight: lighter;
+    font-family: 'Germania One', cursive;
+}
+
+.logo img {
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    width: 60%;
+    
+}
+
+
+/* Stilizare main && aside */
+#container { 
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 30px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+/* Cele 4 articole se vor afisa in format de 2 ROWS si 2 COLUMNS */
+#articles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+/* Cele 2 tag-uri se vor afisa in format de 2 ROWS */
+.main-aside {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); */
+    grid-template-columns: 10fr 2fr;
+    grid-column-gap: 10px;
+}
+
+/* Controlarea <aside> (al 2-lea rand din grid-ul cu "main-aside")  */
+.categories {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Stilizarea titlurilor din Articole */
+.article-title {
+    color: rgb(167, 201, 0);
+    font-family: 'Germania One', cursive;
+    font-size: 1.3rem;
+}
+
+/* Stilizarea paragrafelor din Articole */
+.article-paragraph {
+    color: #e4efac;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 0.2rem;
+}
+
+/* Stilizare link-uri   "Lasa un comentariu" */
+.article-title a {
+    color: white;
+    text-decoration: none;
+}
+
+.article-title a:active {
+    color: rgba(255, 0, 0, 0.2);
+}
+
+/* Stilizare link-uri    "Mai mult.." */
+.article-paragraph a {
+    text-decoration: none;
+    color: red;
+    background-color: rgb(207,232,220);
+    border-radius: 4px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+/* Modificare <aside> */
+.categories ul {
+    box-shadow: 10px 10px 10px rgba(255,255,255, 0.5);
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+.categories ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.categories ul li a:hover {
+    color: #ef3948;
+}
+
+.categories ul li {
+    padding-bottom: 5px;
+}
+
+.categories ul .puncte-puncte {
+    color: #ef3948;
+    font-weight:bold;
+}
+
+/* Stilizare Descriere BLOG */
+#blog-describe {
+    color:#7600adb2;
+    font-style: oblique;
+    letter-spacing: 0.1rem;
+}
+
+#blog-describe:hover {
+    background-color: pink;
+    padding: 5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* Stilizare hr -- articole */
+hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+#blog-describe h4 {
+    text-align: center !important;
+    color: white !important;
+    font-weight: 900;
+}
+
+#blog-describe h4:hover {
+    text-decoration: line-through;
+} 
+
+/* Stilizare FOOTER */
+footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin:0;
+    padding: 40px 20px 0 20px;
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+
+footer p {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+footer h3 {
+    margin:0;
+}
+
+footer ul {
+    list-style-type: none;
+    margin:0;
+}
+
+footer ul li {
+    padding-bottom: 10px;
+}
+
+/* ZONA de crearee ARTICOLE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+#create-article {
+    padding: 30px;
+    background-image: url(https://images.unsplash.com/photo-1515584292151-a8ce75f68eff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+}
+
+#create-article section {
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: rgba(255,255,255,0.7);
+    padding: 20px;
+}
+
+#comment-container h1 {
+    text-align: center;
+}
+
+#comment-container p {
+    font-family: 'Germania One', cursive;
+    font-size: 1.5rem;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+section textarea {
+    padding: 12px 20px;
+    width: 50%;
+    max-height: 200px;
+    min-height: 150px;
+    max-width: 700px;
+    min-width: 400px;
+}
+
+section textarea:focus {
+    border: 3px solid #555;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 2px 5px 5px 5px  #888888;
+}
+
+section input {
+    padding: 12px 20px;
+    width: 25%;
+    outline: none;
+}
+
+section input:focus {
+    border: 3px solid #555;
+    border-radius: 5px;
+    box-shadow: 2px 5px 5px 5px  #888888;
+}
+
+section button {
+    /* margin-top: 18px;
+    margin-left: 250px; */
+    height: 50px;
+    width: 150px;
+    font-family: 'Germania One', cursive;
+    font-size: large;
+}
+
+#comment-container span {
+    display: flex;
+    justify-content: flex-end;
+}
+
+section button:focus {
+    border: 3px solid #555;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 2px 5px 5px 5px  #888888;
+}
+
+#comment-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 20px;
+    margin-bottom: 50px;
+}
+
+
+section main div:nth-of-type(2) {
+    border: 3px solid #555;
+    border-radius: 5px;
+    background-color: aqua;
+    /* margin-left: 100px;
+    margin-top: 18px; */
+    width: 100%;
+    /* height: 50px; */
+    min-height: 400px;
+    max-height: auto;
+    
+}
+
+
+
+.hidden-set ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+.hidden-set ul li {
+    margin:0;
+    padding:0;
+    width: fit-content;
+}
+
+.hidden-set {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 3px solid #555;
+    border-radius: 5px;
+    background-color: aqua;
+    padding-top:10px;
+    padding-left: 10px;
+}
+
+.optional-tools .add-style-tools{
+    padding-left: 50px;
+}
+
+.optional-tools .add-style-tools .elements-style-tools {
+    padding-left: 50px;
+}
+
+.optional-tools .add-style-tools .elements-style-tools .style-tools {
+    padding-left:25px;
+}
+
+
+
+
+.avans {
+    align-self: flex-start;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* ZONA elemente css pentru JavaScript *********************** */
+.show-article-container-menu {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+}
+
+.show {
+    display: block;
+}
+
+.make-btn-green {
+    background-color: rgba(4, 68, 4, 0.753);
+}
+
+.make-btn-blue {
+    background-color:blue;
+    
+}
+
+.make-btn-yellow {
+    background-color: yellow;
+}
+
+.make-btn-red {
+    background-color: red;
+    
+}
+
+.default-style-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.default-style-article-heading {
+    margin: 24.366px 0;
+    padding: 15px 10px;
+    width: 70%;
+    background-color: white;
+}
+
+.default-style-article-paragraph {
+    margin: 16px 0;
+    padding: 15px 10px;
+    width: 70%;
+    background-color: white;
+}
+
+.default-style-article-hr {
+    margin: 8px 0;
+    padding: 0;
+    width: 70%;
+    background-color: white;
+}
+
+/* Stilizarea titlurilor din Articole */
+.blog-style-article-heading {
+    margin: 24.366px 0;
+    padding: 15px 10px;
+    width: 70%;
+    background-color: rgba(0,0,0,0.3);
+    color: rgb(167, 201, 0);
+    font-family: 'Germania One', cursive;
+    font-size: 1.3rem;
+}
+
+/* Stilizarea paragrafelor din Articole */
+.blog-style-article-paragraph {
+    margin: 16px 0;
+    padding: 15px 10px;
+    width: 70%;
+    background-color: rgba(0,0,0,0.3);
+    color: #e4efac;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 0.2rem;
+}
+
+/* Stilizare link-uri   "Lasa un comentariu" */
+.blog-style-link-comment {
+    color: white;
+    text-decoration: none;
+}
+
+.blog-style-link-comment:active {
+    color: rgba(255, 0, 0, 0.2);
+}
+
+/* Stilizare link-uri    "Mai mult.." */
+.blog-style-link-more {
+    text-decoration: none;
+    color: red;
+    background-color: rgb(207,232,220);
+    border-radius: 4px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.blog-style-article-hr {
+    margin: 8px 0;
+    padding: 0;
+    width: 70%;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+
+/* ZONA elemente css pentru JavaScript *********************** */
+
+
+/* ZONA de crearee ARTICOLE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    /* ZONA elemente css pentru JavaScript *********************** */
+    .show-article-container-menu {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    /* Bagara de navigatie */
+    #nav-bar ul {
+        overflow: visible;
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    } 
+
+    #nav-bar .home {
+        padding: 0;
+        padding: 19px 16px;
+    }
+
+    #nav-bar .about {
+        padding: 19px 16px;
+        background-image: linear-gradient(to bottom, #5e1f24, #ef3948 , #58585b);
+    }
+
+    #nav-bar ul li {
+        padding: 0;
+        padding: 19px 16px;
+        background-image: linear-gradient(to bottom, #5e1f24, #ef3948 , #58585b);
+    }
+
+    a.nav-link-home {
+        padding: 19px 16px 19px 16px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    a.nav-link {
+        padding: 19px 16px;
+
+    }
+
+    /* Modificare site- LOGO */
+    /* De la Extra-SMALL numai apare background-ul && border-ul din .logo */
+    .logo {
+        background-color: rgba(255, 255, 255, 0.01);
+        border: 0;
+        margin-top: 180px;
+    }
+
+    .logo img {
+        width: 0%;
+        border: 0;
+    }
+
+    /* Toate cele 4 articole vor avea cate un rand fiecare */
+    #articles {
+        grid-template-columns: 1fr;
+        padding-left: 20px;
+        grid-gap: 0;
+    }
+
+    /* Articolele si Catogoriile vor fi pe cate un rand fiecare */
+    .main-aside {
+        grid-template-columns: 1fr;
+        grid-row-start: 2;
+        grid-row-end: 1;
+        
+    }
+
+    /* Se va schimba ordinea lui Articles cu Categoriile */
+    .main-aside #articles:nth-child(1) {
+        grid-row: 2;
+        grid-column: 1/1;
+    }
+
+    .categories {
+        align-items: center;
+    }
+
+    .categories ul {
+        box-shadow: none;
+    }
+
+    /* La scara Extra-SMALL, descrierea site-ului va disparea */
+    #blog-describe {
+        display: none;
+    }
+
+    /* La scara Extra-SMALL container-ul meu va accesa toata latimea paginii */
+    #container {
+        margin-left:0;
+        margin-right:0;
+    }
+
+        /* Toate cele 4 articole vor avea cate un rand fiecare */
+        #articles {
+            grid-template-columns: 1fr;
+            padding-left: 20px;
+        }
+    
+        #comment-container {
+            grid-template-columns: 1fr;
+            grid-auto-columns: 100px;
+        }
+    
+        #comment-container p {
+            display: flex;
+            justify-content: center;
+        }
+    
+        #comment-container input {
+            width: 25%;
+            margin-left: 200px;
+        }
+    
+        #comment-container textarea {
+            margin-left: 20px;
+        }
+        #comment-container button {
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    /* Bagara de navigatie */
+    #nav-bar ul {
+        overflow: visible;
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    } 
+
+    #nav-bar .home {
+        padding: 0;
+        padding: 19px 16px;
+    }
+
+    #nav-bar .about {
+        padding: 19px 16px;
+        background-image: linear-gradient(to bottom, #5e1f24, #ef3948 , #58585b);
+    }
+
+    #nav-bar ul li {
+        padding: 0;
+        padding: 19px 16px;
+        background-image: linear-gradient(to bottom, #5e1f24, #ef3948 , #58585b);
+    }
+
+    a.nav-link-home {
+        padding: 19px 16px 19px 16px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    a.nav-link {
+        padding: 19px 16px;
+
+    }
+    
+    /* De la SMALL in jos numai apare IMG.LOGO */
+    .logo {
+        margin-top: 180px;
+    }
+    
+    .logo img {
+        width: 0%;
+        border: 0;
+    }
+
+    /* Articolele si Catogoriile vor fi pe cate un rand fiecare */
+    .main-aside {
+        grid-template-columns: 1fr;
+        
+    }
+
+    /* Se va schimba ordinea lui Articles cu Categoriile */
+    .main-aside #articles:nth-child(1) {
+        grid-row: 2/2;
+        grid-column: 1/1;
+    }
+
+    .categories {
+        align-items: center;
+    }
+
+    .categories ul {
+        box-shadow: none;
+    }
+
+
+    /* Toate cele 4 articole vor avea cate un rand fiecare */
+    #articles {
+        grid-template-columns: 400px;
+        padding-left: 20px;
+        grid-gap: 0px;
+    }
+
+    #comment-container {
+        grid-template-columns: 1fr;
+        grid-auto-columns: 100px;
+    }
+
+    #comment-container p {
+        display: flex;
+        justify-content: center;
+    }
+
+    #comment-container input {
+        width: 25%;
+        margin-left: 200px;
+    }
+
+    #comment-container textarea {
+        margin-left: 100px;
+    }
+    #comment-container button {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    #nav-bar ul {
+        overflow: visible;
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    } 
+
+    #nav-bar .home {
+        padding: 0;
+        padding: 19px 16px;
+    }
+
+    #nav-bar .about {
+        padding: 19px 16px;
+        background-image: linear-gradient(to bottom, #5e1f24, #ef3948 , #58585b);
+    }
+
+    #nav-bar ul li {
+        padding: 0;
+        padding: 19px 16px;
+        background-image: linear-gradient(to bottom, #5e1f24, #ef3948 , #58585b);
+    }
+
+    a.nav-link-home {
+        padding: 19px 16px 19px 16px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    a.nav-link {
+        padding: 19px 16px;
+
+    }
+
+    .logo {
+        margin-top: 180px;
+    }
+
+
+    /* .main-aside {
+        display: grid;
+        grid-row-gap: 0.1px;
+    } */
+
+    /* Se va schimba ordinea lui Articles cu Categoriile */
+    .main-aside {
+        display: flex;
+    }
+
+    #articles:first-child {
+        order: 1;
+    }
+
+    /* Toate cele 4 articole vor avea cate un rand fiecare */
+    #articles {
+        grid-template-columns: 1fr;
+        padding-left: 20px;
+    }
+
+    .categories ul {
+        box-shadow: none;
+    }
+
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}
+
+/* Responsive pentru Adaugare articol SITE */
+@media (max-width: 991.98px) {
+    #create-article section {
+        margin-left: 0;
+        margin-right: 0;
+        width:100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #create-article {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
