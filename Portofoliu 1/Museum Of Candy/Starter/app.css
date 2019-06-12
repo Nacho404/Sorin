@@ -1,0 +1,51 @@
+body {
+    background-color: #f5d9d5;
+    font-family: "Nunito", sans-serif;
+}
+
+#navigatie .nav-link {
+    color:white;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+#navigatie .nav-link:hover {
+    color:red;
+}
+
+#navigatie .navbar-brand{
+    color: red;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+#candyOptions h1 {
+    font-size: 4rem;
+    font-weight: 100;
+    color: white;
+}
+
+.slash {
+    color:red;
+}
+
+#Continut h3 {
+    color: red;
+    font-weight: 100;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#Continut p {
+    color: #f498b8;
+    line-height: 2;
+    font-weight: 100;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+@media (max-width: 1199.98px) {
+    #candyOptions h1 {
+        font-size: 3rem;
+    }
+}
